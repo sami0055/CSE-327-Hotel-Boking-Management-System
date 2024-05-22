@@ -11,7 +11,12 @@ import BookingConfirmed from './BookingConfirmed'
 import PageLoader from '../../components/Loaders/PageLoader'
 import PageError from '../../components/Error/PageError'
 
-
+/**
+ * Represents a component for managing the payment process.
+ * @module Payment
+ * @returns {JSX.Element} JSX representation of the payment component.
+ */
+cons
 const Payment = () => {
 
     const { setPage } = useContext(GlobalContext)

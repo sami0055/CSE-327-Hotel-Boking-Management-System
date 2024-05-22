@@ -9,7 +9,16 @@ import { toast } from 'react-toastify'
 import Loader from "../../components/Loaders/Loader"
 import StripeCheckout from 'react-stripe-checkout';
 import { MAKE_PAYMENT } from '../../graphql/mutations/paymentMutation'
-
+/**
+ * Represents a component for handling payment processing.
+ * @module PaymentScreen
+ * @param {Object} props - The props object containing user, room, booking, and bookingExists details.
+ * @param {Object} props.user - The user information.
+ * @param {Object} props.room - The room information.
+ * @param {Object} props.booking - The booking information.
+ * @param {boolean} props.bookingExists - Indicates whether a booking already exists.
+ * @returns {JSX.Element} JSX representation of the payment screen component.
+ */
 const PaymentScreen = (props) => {
     const { user, room, booking, bookingExists } = props
     const navigate = useNavigate()
@@ -49,7 +58,13 @@ const PaymentScreen = (props) => {
                 })
             })
     }
-
+/**
+ * Handles payment processing when a token is received.
+ * @function onToken
+ * @param {Object} token - The payment token.
+ * @param {string} token.id - The ID of the payment token.
+ * @returns {void}
+ */
     const onToken = (token) => {
         setLoading(true)
         if (bookingExists) {

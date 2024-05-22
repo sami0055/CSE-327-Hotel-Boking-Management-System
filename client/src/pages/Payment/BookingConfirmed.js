@@ -5,6 +5,29 @@ import { getAge } from '../../utils/utilFunctions'
 import { useNavigate } from 'react-router-dom'
 import { Confirmation, Layout } from './CommonStyles'
 
+/**
+ * Represents a component for displaying booking confirmation details.
+ * @module BookingConfirmed
+ * @param {Object} props - The props object containing user, room, and booking details.
+ * @param {Object} props.user - The user information.
+ * @param {string} props.user.name - The name of the user.
+ * @param {string} props.user.email - The email of the user.
+ * @param {string} props.user.dob - The date of birth of the user.
+ * @param {Object} props.room - The room information.
+ * @param {Object} props.room.hotel - The hotel information.
+ * @param {string} props.room.hotel.name - The name of the hotel.
+ * @param {string} props.room.name - The name of the room.
+ * @param {number} props.room.price - The price of the room.
+ * @param {Object} props.booking - The booking information.
+ * @param {Object} props.booking.people - The number of people.
+ * @param {number} props.booking.people.adults - The number of adults.
+ * @param {number} props.booking.people.children - The number of children.
+ * @param {Array<number>} props.booking.roomNumbers - An array of room numbers.
+ * @param {number} props.booking.amount - The total amount of the booking.
+ * @param {boolean} props.booking.paid - Indicates whether the booking is paid or not.
+ * @returns {JSX.Element} JSX representation of the booking confirmation component.
+ */
+
 const BookingConfirmed = (props) => {
     const { user, room, booking } = props
     const navigate = useNavigate()

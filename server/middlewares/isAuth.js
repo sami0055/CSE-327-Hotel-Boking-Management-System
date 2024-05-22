@@ -1,3 +1,11 @@
+/**
+ * Middleware for verifying JWT tokens in the Authorization header.
+ * @function verifyToken
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @param {function} next - The next middleware function.
+ * @returns {void}
+ */
 const jwt = require('jsonwebtoken')
 
 module.exports = (req,res, next) => {
