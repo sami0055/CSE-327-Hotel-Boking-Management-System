@@ -78,12 +78,12 @@ These things must be installed in your system.
 ## Contribution: 
 <li>
 Name: Maisha Rahman
-ID: 2122153042
-Name: Md.Samiul Alim
-ID: 2121212042
-Name: MD. Mazharul Haque Tumul 
-ID:1813596042
-Name: Samin Bin Rahman Zihad
+ID: 2122153042</li>
+<li>Name: Md.Samiul Alim
+ID: 2121212042</li>
+<li>Name: MD. Mazharul Haque Tumul 
+ID:1813596042</li>
+<li>Name: Samin Bin Rahman Zihad
 ID: 2122445642
 </li>
 
