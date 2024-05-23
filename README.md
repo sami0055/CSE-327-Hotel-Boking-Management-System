@@ -1,6 +1,6 @@
-#[Hotel-lagbo?] CSE-327-Hotel-Boking-Management-System
+**#[Hotel-lagbo?] CSE-327-Hotel-Boking-Management-System**
  <p align="center">
-    A hotel room booking web app with MERN Stack.    <br />
+    **A hotel room booking web app with MERN Stack.**    <br />
      </p>
      <!-- TABLE OF CONTENTS -->
 <details open="open">
