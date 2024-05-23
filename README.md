@@ -76,6 +76,7 @@ These things must be installed in your system.
     ```
     <!-- CONTRIBUTING -->
 ## Contribution: 
+<li>
 Name: Maisha Rahman
 ID: 2122153042
 Name: Md.Samiul Alim
@@ -84,7 +85,7 @@ Name: MD. Mazharul Haque Tumul
 ID:1813596042
 Name: Samin Bin Rahman Zihad
 ID: 2122445642
-
+</li>
 
 
 
