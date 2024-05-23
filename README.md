@@ -20,8 +20,7 @@
       </ul>
     </li>
     
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>  </ol>
+    <li><a href="#contribution">Contributing</a></li>
 </details>
 <!-- ABOUT THE PROJECT -->
 ## About The Project
