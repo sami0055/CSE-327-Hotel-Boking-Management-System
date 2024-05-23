@@ -75,15 +75,17 @@ These things must be installed in your system.
     npm start
     ```
     <!-- CONTRIBUTING -->
-## Contributing
+## Contribution: 
+Name: Maisha Rahman
+ID: 2122153042
+Name: Md.Samiul Alim
+ID: 2121212042
+Name: MD. Mazharul Haque Tumul 
+ID:1813596042
+Name: Samin Bin Rahman Zihad
+ID: 2122445642
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 
 <!-- CONTACT -->
