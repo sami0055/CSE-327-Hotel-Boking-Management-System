@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.4.0/mocha.min.css">
+</head>
+
+<body>
+  <div id="mocha"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.4.0/mocha.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js"></script>
+  <script>
+    mocha.setup('bdd');
+    const assert = chai.assert;
+  </script>
+  <script>
+    // Hotel booking function
+    class Hotel {
+      constructor(name, availableRooms) {
+        this.name = name;
+        this.availableRooms = availableRooms;
+      }
+
+      bookRoom(numRooms) {
+        if (numRooms > this.availableRooms) {
+          return 'Not enough rooms available';
+        } else if (numRooms <= 0) {
+          return 'Invalid number of rooms';
+        } else {
+          this.availableRooms -= numRooms;
+          return `${numRooms} rooms successfully booked`;
+        }
+      }
+
+      getAvailableRooms() {
+        return this.availableRooms;
+      }
+    }
+  </script>
+  <script>
+    describe('Hotel Booking', function () {
+      let hotel;
+
+      beforeEach(function () {
+        hotel = new Hotel('Grand Plaza', 10);
+      });
+
+      it('should book a room successfully', function () {
+        const result = hotel.bookRoom(3);
+        assert.strictEqual(result, '3 rooms successfully booked');
+        assert.strictEqual(hotel.getAvailableRooms(), 7);
+      });
+
+      it('should not book more rooms than available', function () {
+        const result = hotel.bookRoom(11);
+        assert.strictEqual(result, 'Not enough rooms available');
+        assert.strictEqual(hotel.getAvailableRooms(), 10);
+      });
+
+      it('should not book zero or negative number of rooms', function () {
+        const result = hotel.bookRoom(0);
+        assert.strictEqual(result, 'Invalid number of rooms');
+        assert.strictEqual(hotel.getAvailableRooms(), 10);
+
+        const resultNegative = hotel.bookRoom(-5);
+        assert.strictEqual(resultNegative, 'Invalid number of rooms');
+        assert.strictEqual(hotel.getAvailableRooms(), 10);
+      });
+
+      it('should return the correct number of available rooms', function () {
+        hotel.bookRoom(2);
+        assert.strictEqual(hotel.getAvailableRooms(), 8);
+      });
+    });
+
+    mocha.run();
+  </script>
+</body>
+
+</html>
